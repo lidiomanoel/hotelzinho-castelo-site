@@ -53,7 +53,7 @@
             </p>
             <div class="hero-actions">
               <a class="button button-yellow" href="https://wa.me/message/5DV3SMECIX2TO1" target="_blank" rel="noreferrer">
-                Quero conhecer <span aria-hidden="true">↗</span>
+                Combinar uma visita <span aria-hidden="true">↗</span>
               </a>
               <a class="text-link" href="#sobre">Conheça o Hotelzinho <span aria-hidden="true">↓</span></a>
             </div>
@@ -160,19 +160,38 @@
               Veja mais no Instagram <span aria-hidden="true">↗</span>
             </a>
           </div>
-          <div class="gallery-photos">
-            <figure class="gallery-photo gallery-photo-tall">
-              <img src="assets/atividade-criancas.jpg" alt="Crianças brincando juntas" loading="lazy" />
-              <figcaption>Brincar junto</figcaption>
-            </figure>
-            <figure class="gallery-photo gallery-photo-short">
-              <img src="assets/hora-do-lanche.jpg" alt="Hora do lanche no Hotelzinho Castelo" loading="lazy" />
-              <figcaption>Hora do lanche</figcaption>
-            </figure>
-            <figure class="gallery-photo gallery-photo-short">
-              <img src="assets/atividade-criativa.jpg" alt="Atividade de desenho e pintura" loading="lazy" />
-              <figcaption>Soltar a imaginação</figcaption>
-            </figure>
+          <div class="gallery-carousel" data-carousel role="region" aria-roledescription="carrossel" aria-label="Fotos do dia a dia no Hotelzinho Castelo" tabindex="0">
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <figure class="gallery-slide" aria-roledescription="slide" aria-label="1 de 3">
+                  <img src="assets/atividade-criancas.jpg" alt="Crianças brincando juntas" loading="lazy" />
+                  <figcaption>Brincar junto</figcaption>
+                </figure>
+                <figure class="gallery-slide" aria-roledescription="slide" aria-label="2 de 3" aria-hidden="true">
+                  <img src="assets/hora-do-lanche.jpg" alt="Hora do lanche no Hotelzinho Castelo" loading="lazy" />
+                  <figcaption>Hora do lanche</figcaption>
+                </figure>
+                <figure class="gallery-slide" aria-roledescription="slide" aria-label="3 de 3" aria-hidden="true">
+                  <img src="assets/atividade-criativa.jpg" alt="Atividade de desenho e pintura" loading="lazy" />
+                  <figcaption>Soltar a imaginação</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <div class="carousel-options">
+                <div class="carousel-dots" role="group" aria-label="Escolher foto">
+                  <button class="carousel-dot is-active" type="button" aria-label="Mostrar foto 1" aria-pressed="true"></button>
+                  <button class="carousel-dot" type="button" aria-label="Mostrar foto 2" aria-pressed="false"></button>
+                  <button class="carousel-dot" type="button" aria-label="Mostrar foto 3" aria-pressed="false"></button>
+                </div>
+                <button class="carousel-arrow carousel-play" type="button" data-carousel-toggle aria-label="Pausar apresentação" aria-pressed="false">Ⅱ</button>
+              </div>
+              <div class="carousel-arrows">
+                <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Foto anterior">←</button>
+                <button class="carousel-arrow" type="button" data-carousel-next aria-label="Próxima foto">→</button>
+              </div>
+            </div>
+            <p class="sr-only" data-carousel-status aria-live="polite">Foto 1 de 3: Brincar junto</p>
           </div>
         </div>
       </section>
