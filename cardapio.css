@@ -1,0 +1,82 @@
+.menu-hero { position: relative; overflow: hidden; padding: 78px 0 86px; background: var(--cream); }
+.menu-hero-inner { position: relative; max-width: 900px; }
+.menu-hero h1 { max-width: 800px; margin-bottom: 20px; font-size: clamp(46px, 6vw, 72px); }
+.menu-hero h1 span { color: var(--blue); }
+.menu-hero-text { max-width: 620px; margin-bottom: 22px; color: var(--muted); font-size: 16px; line-height: 1.75; }
+.sample-label { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border: 1px solid rgba(196, 151, 16, .25); border-radius: 999px; background: rgba(255, 255, 255, .7); color: #715810; font-size: 11px; font-weight: 700; }
+.sample-label span { color: #d6a619; font-size: 14px; }
+.menu-hero-doodle { position: absolute; color: #edbd2a; }
+.menu-hero-doodle-one { top: 19px; right: 13%; font-size: 42px; }
+.menu-hero-doodle-two { right: 5%; bottom: 34px; color: var(--blue); font-size: 36px; transform: rotate(-12deg); }
+
+.menu-board-section { padding: 77px 0 96px; background: #f5faff; }
+.menu-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 30px; }
+.menu-section-heading h2 { margin: 0; font-size: clamp(38px, 4.4vw, 52px); line-height: 1.05; }
+.menu-section-heading h2 span { color: var(--blue); }
+.menu-actions { display: flex; align-items: center; gap: 10px; }
+.month-chip, .print-button { display: inline-flex; min-height: 40px; align-items: center; justify-content: center; gap: 8px; padding: 0 13px; border: 1px solid var(--line); border-radius: 999px; background: white; color: var(--ink); font-size: 11px; font-weight: 700; }
+.month-chip span { color: var(--blue-dark); font-size: 16px; }
+.print-button { cursor: pointer; transition: background .2s ease, border-color .2s ease; }
+.print-button:hover { border-color: rgba(17, 155, 210, .35); background: #f8fdff; }
+.print-button span { color: var(--blue-dark); font-size: 16px; }
+
+.week-tabs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 9px; margin-bottom: 18px; padding: 7px; border: 1px solid rgba(27, 40, 56, .08); border-radius: 15px; background: #eaf4fb; }
+.week-tab { min-height: 44px; border: 0; border-radius: 10px; background: transparent; color: #62717c; font: 600 13px var(--sans); cursor: pointer; transition: background .2s ease, color .2s ease, box-shadow .2s ease; }
+.week-tab:hover { color: var(--blue-dark); }
+.week-tab[aria-selected="true"] { background: white; color: var(--blue-dark); box-shadow: 0 3px 11px rgba(27, 40, 56, .08); }
+.week-summary { display: flex; align-items: center; justify-content: space-between; margin: 21px 0 14px; color: var(--muted); font-size: 11px; }
+.week-summary > div { display: flex; align-items: center; gap: 10px; color: var(--ink); font-size: 14px; }
+.week-summary-icon { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 11px; background: #fff0b8; color: #b08506; font-size: 18px; }
+.menu-days-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.menu-day-card { position: relative; overflow: hidden; padding: 22px 24px 20px; border: 1px solid rgba(27, 40, 56, .08); border-radius: 16px; background: white; box-shadow: 0 4px 15px rgba(24, 63, 89, .035); }
+.menu-day-card::before { position: absolute; top: 0; right: 0; left: 0; height: 4px; background: var(--day-color, var(--blue)); content: ''; }
+.menu-day-heading { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 15px; }
+.menu-day-heading h3 { margin: 0; font-size: 21px; }
+.day-badge { display: inline-flex; min-width: 28px; height: 28px; align-items: center; justify-content: center; border-radius: 9px; background: #f3f7f9; color: #7a8991; font-size: 10px; font-weight: 700; }
+.meal-list { display: grid; gap: 0; }
+.meal-row { display: grid; grid-template-columns: 126px 1fr; gap: 14px; padding: 12px 0; border-top: 1px solid rgba(27, 40, 56, .08); }
+.meal-label { display: flex; align-items: flex-start; gap: 7px; color: var(--blue-dark); font-size: 10px; line-height: 1.5; font-weight: 700; }
+.meal-label span { flex: 0 0 auto; color: #d2a41c; font-size: 13px; line-height: 1.1; }
+.meal-item { margin: 0; color: #4f5d67; font-size: 12px; line-height: 1.55; }
+.menu-note { display: flex; align-items: flex-start; gap: 14px; margin-top: 22px; padding: 20px 22px; border: 1px solid #f2e3a6; border-radius: 15px; background: #fffbed; }
+.menu-note-icon { display: grid; width: 34px; height: 34px; flex: 0 0 34px; place-items: center; border-radius: 11px; background: #fff1bd; color: #b28a0b; font-size: 18px; }
+.menu-note strong { display: block; margin: 1px 0 5px; color: var(--ink); font-size: 12px; }
+.menu-note p { max-width: 870px; margin: 0; color: #6b6657; font-size: 11px; line-height: 1.65; }
+.menu-contact-cta { display: flex; align-items: center; justify-content: space-between; gap: 25px; margin-top: 44px; padding: 30px 34px; border-radius: 18px; background: #138fc3; color: white; }
+.menu-contact-cta .eyebrow { margin-bottom: 8px; color: #ffdc61; }
+.menu-contact-cta h2 { margin: 0; font-size: clamp(25px, 3vw, 34px); line-height: 1.1; }
+.menu-contact-cta h2 span { color: #ffdc61; }
+
+@media (max-width: 760px) {
+  .menu-hero { padding: 60px 0 67px; }
+  .menu-hero h1 { font-size: clamp(43px, 9vw, 60px); }
+  .menu-hero-doodle-one { right: 7%; top: 8px; font-size: 31px; }
+  .menu-hero-doodle-two { right: 2%; bottom: 17px; font-size: 27px; }
+  .menu-board-section { padding: 60px 0 75px; }
+  .menu-section-heading { align-items: flex-start; flex-direction: column; gap: 17px; }
+  .menu-actions { flex-wrap: wrap; }
+  .menu-days-grid { grid-template-columns: 1fr; }
+  .menu-contact-cta { align-items: flex-start; flex-direction: column; padding: 26px 24px; }
+}
+
+@media (max-width: 480px) {
+  .week-tabs { gap: 4px; padding: 5px; }
+  .week-tab { min-height: 40px; font-size: 11px; }
+  .week-summary { align-items: flex-start; flex-direction: column; gap: 7px; }
+  .menu-day-card { padding: 20px 18px 17px; }
+  .meal-row { grid-template-columns: 108px 1fr; gap: 10px; }
+  .menu-note { padding: 17px 16px; }
+}
+
+@media print {
+  .site-header, .site-footer, .menu-hero-doodle, .menu-actions, .week-tabs, .menu-contact-cta { display: none !important; }
+  .menu-hero { padding: 24px 0 18px; background: white; }
+  .menu-hero h1 { font-size: 30px; }
+  .menu-hero-text { margin-bottom: 8px; }
+  .menu-board-section { padding: 18px 0; background: white; }
+  .menu-section-heading { margin-bottom: 10px; }
+  .menu-days-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .menu-day-card { break-inside: avoid; padding: 12px; box-shadow: none; }
+  .meal-row { grid-template-columns: 105px 1fr; padding: 7px 0; }
+  .menu-note { break-inside: avoid; margin-top: 12px; }
+}

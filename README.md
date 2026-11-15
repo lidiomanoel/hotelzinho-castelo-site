@@ -15,3 +15,7 @@ Abra `index.html` no navegador. O site não precisa de instalação ou processo 
 Este projeto é um rascunho de apresentação. Confirme com a equipe os textos, endereço e links de contato antes de publicar.
 
 As capturas originais em `Base/` ficam no computador e estão excluídas do Git; somente os recortes usados no site ficam em `assets/`.
+
+## Página de cardápio
+
+`cardapio.html` apresenta uma simulação mensal em quatro semanas. Os pratos são exemplos ilustrativos e devem ser substituídos pelo planejamento real da creche antes de qualquer publicação como conteúdo oficial.

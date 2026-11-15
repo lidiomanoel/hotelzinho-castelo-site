@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff9e7" />
+    <meta name="description" content="Veja uma simulação de cardápio mensal do Hotelzinho Castelo." />
+    <title>Cardápio do mês | Hotelzinho Castelo</title>
+    <link rel="icon" href="assets/logo-hotelzinho.jpg" type="image/jpeg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cardapio.css" />
+    <script src="script.js" defer></script>
+    <script src="cardapio.js" defer></script>
+  </head>
+  <body class="menu-page">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html#inicio" aria-label="Hotelzinho Castelo — início">
+          <img src="assets/logo-hotelzinho.jpg" alt="Logo do Hotelzinho Castelo" />
+          <span class="brand-copy">
+            <strong>Hotelzinho Castelo</strong>
+            <small>Cuidado e diversão desde 2015</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Abrir menu</span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+          <a href="index.html#sobre">Quem somos</a>
+          <a href="index.html#dia-a-dia">Nosso dia a dia</a>
+          <a href="#cardapio" aria-current="page">Cardápio do mês</a>
+          <a href="index.html#contato">Contato</a>
+          <a class="button button-small button-blue" href="https://wa.me/message/5DV3SMECIX2TO1" target="_blank" rel="noreferrer">
+            Fale com a gente <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="menu-hero" id="topo">
+        <div class="container menu-hero-inner">
+          <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> Planejamento de todo dia</p>
+          <h1>Um mês inteiro de refeições <span>planejadas com carinho.</span></h1>
+          <p class="menu-hero-text">As famílias podem acompanhar o cardápio do mês e conhecer um pouquinho da rotina à mesa.</p>
+          <div class="sample-label"><span aria-hidden="true">✦</span> Exemplo demonstrativo · refeições ilustrativas</div>
+          <span class="menu-hero-doodle menu-hero-doodle-one" aria-hidden="true">✳</span>
+          <span class="menu-hero-doodle menu-hero-doodle-two" aria-hidden="true">♡</span>
+        </div>
+      </section>
+
+      <section class="menu-board-section" id="cardapio">
+        <div class="container">
+          <div class="menu-section-heading">
+            <div>
+              <p class="eyebrow">Uma semana de cada vez</p>
+              <h2>Cardápio do <span>mês.</span></h2>
+            </div>
+            <div class="menu-actions">
+              <span class="month-chip"><span aria-hidden="true">▦</span> Exemplo · 4 semanas</span>
+              <button class="print-button" type="button" id="print-menu"><span aria-hidden="true">⤓</span> Imprimir exemplo</button>
+            </div>
+          </div>
+
+          <div class="week-tabs" role="tablist" aria-label="Semanas do cardápio">
+            <button class="week-tab" type="button" role="tab" id="week-tab-1" aria-controls="week-panel" aria-selected="true" data-week="1">Semana 1</button>
+            <button class="week-tab" type="button" role="tab" id="week-tab-2" aria-controls="week-panel" aria-selected="false" data-week="2">Semana 2</button>
+            <button class="week-tab" type="button" role="tab" id="week-tab-3" aria-controls="week-panel" aria-selected="false" data-week="3">Semana 3</button>
+            <button class="week-tab" type="button" role="tab" id="week-tab-4" aria-controls="week-panel" aria-selected="false" data-week="4">Semana 4</button>
+          </div>
+
+          <div class="week-summary" aria-live="polite">
+            <div><span class="week-summary-icon" aria-hidden="true">☀</span><strong id="week-title">Semana 1</strong></div>
+            <span id="week-subtitle">De segunda a sexta</span>
+          </div>
+
+          <div class="menu-days-grid" id="week-panel" role="tabpanel" aria-labelledby="week-tab-1"></div>
+
+          <aside class="menu-note">
+            <span class="menu-note-icon" aria-hidden="true">♡</span>
+            <div>
+              <strong>Um exemplo para apresentar o formato</strong>
+              <p>Este cardápio é uma simulação visual. Os pratos são ilustrativos e devem ser substituídos pelo planejamento real da creche, considerando as idades atendidas e as restrições alimentares informadas pelas famílias.</p>
+            </div>
+          </aside>
+
+          <div class="menu-contact-cta">
+            <div>
+              <p class="eyebrow">Quer saber mais?</p>
+              <h2>Converse com a equipe do <span>Castelo.</span></h2>
+            </div>
+            <a class="button button-yellow" href="https://wa.me/message/5DV3SMECIX2TO1" target="_blank" rel="noreferrer">Falar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="footer-brand" href="index.html#inicio"><img src="assets/logo-hotelzinho.jpg" alt="" /><span>Hotelzinho Castelo</span></a>
+        <p>Um lugar para brincar, aprender e crescer feliz.</p>
+        <a href="index.html" class="back-top">Voltar ao site</a>
+        <a href="#topo" class="back-top">Voltar ao topo ↑</a>
+      </div>
+      <div class="container footer-bottom"><span>© <span id="year"></span> Hotelzinho Castelo</span><span>Feito com carinho em Pernambuco</span></div>
+    </footer>
+  </body>
+</html>
